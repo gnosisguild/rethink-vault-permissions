@@ -82,11 +82,11 @@ export default [
 
   // transfer USDC
   allow.eth.usdc.transfer(
-    "0xFcA1004B60DcEC14E7dC17E39f37ADfC2c62678D",
+    "0xd245A74898124ae10DE4DB5ec842032042654F0d",
     undefined,
   ),
   {
-    targetAddress: "0xFcA1004B60DcEC14E7dC17E39f37ADfC2c62678D",
+    targetAddress: "0xd245A74898124ae10DE4DB5ec842032042654F0d",
     selector: "0xa61f5814",
     condition: c.calldataMatches(
       ["0x6bcbc7959ce79b8f27efe1eae504f98cbe2647a8"],

@@ -24,6 +24,7 @@ export default [
   // deposit usdc to bravUSDC
   allowErc20Approve([usdc], bravUSDC),
   allow.eth.bracket.bravUSDC.deposit(undefined, c.avatar),
+  allow.eth.bracket.bravUSDC.withdraw(),
 
   // wrap/unwrap bravUSDC
   allowErc20Approve([bravUSDC], wbravUSDC),
@@ -78,4 +79,18 @@ export default [
     undefined, // assets
     c.avatar, // receiver must be the avatar
   ),
+
+  // transfer USDC to admin module
+  allow.eth.usdc.transfer(
+    "0xd245A74898124ae10DE4DB5ec842032042654F0d",
+    undefined,
+  ),
+  {
+    targetAddress: "0xd245A74898124ae10DE4DB5ec842032042654F0d",
+    selector: "0xa61f5814",
+    condition: c.calldataMatches(
+      ["0x6bcbc7959ce79b8f27efe1eae504f98cbe2647a8"],
+      ["address"],
+    ),
+  },
 ] satisfies Permissions;

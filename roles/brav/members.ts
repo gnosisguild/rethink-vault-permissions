@@ -1,3 +1,3 @@
 export default [
-  "0x6d89A82F0204A296572f65Fe483B03fc585C6532",
+  "0x9ca598a23FC0E6A10C7a2C4fdd63BdDeFfB47d1E",
 ] satisfies `0x${string}`[];

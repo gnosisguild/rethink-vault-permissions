@@ -6,9 +6,9 @@
   },
   "scripts": {
     "setup": "eth-sdk -p ./.lib/eth-sdk",
-    "brav:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js brav eth:0xC8C8785509f6Efc57EEdf3FA75BEa83E2d3747A1",
-    "brav:registerBundler3Unwrapper": "rimraf build && tsc && node build/.lib/scripts/registerBundler3Unwrapper.js eth:0xC8C8785509f6Efc57EEdf3FA75BEa83E2d3747A1",
-    "boreal:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js boreal eth:0xc8c8785509f6efc57eedf3fa75bea83e2d3747a1"
+    "brav:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js brav eth:0x7B146b2E72fbbE5Fc0eF7Fa9920Bf1eb2610f600",
+    "brav:registerBundler3Unwrapper": "rimraf build && tsc && node build/.lib/scripts/registerBundler3Unwrapper.js eth: ",
+    "boreal:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js boreal eth:0xDd64c77A948aa1421f6065074b7c25ca900876e5"
   },
   "dependencies": {
     "@gnosis-guild/eth-sdk": "^0.4.0",
