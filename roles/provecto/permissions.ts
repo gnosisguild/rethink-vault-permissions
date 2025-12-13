@@ -63,12 +63,12 @@ const allowMorphoUsdcWithdraw = (vaultToken: `0x${string}`) => {
 
 export default [
   ///// AAVE PERMISSIONS /////
-
+  ...allowErc20Approve([usdc], contracts.eth.aave.poolV3),
   allow.eth.aave.poolV3.supply(usdc, undefined, c.avatar, undefined),
   allow.eth.aave.poolV3.withdraw(usdc, undefined, c.avatar),
 
   ///// FLUID PERMISSIONS /////
-
+  ...allowErc20Approve([usdc], contracts.eth.fluid.fUsdc),
   allow.eth.fluid.fUsdc["deposit(uint256,address)"](undefined, c.avatar),
   allow.eth.fluid.fUsdc["deposit(uint256,address,uint256)"](
     undefined,
