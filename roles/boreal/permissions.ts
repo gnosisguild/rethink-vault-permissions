@@ -57,6 +57,11 @@ export default [
     undefined, // minSharePrice
     c.avatar, // receiver must be the avatar
   ),
+  allow.eth.morpho.ethereumGeneralAdapter1.erc20Transfer(
+    usdc,
+    c.avatar,
+    undefined,
+  ),
 
   // repay USDC
   ...allowErc20Approve([usdc], ethereumGeneralAdapter1),
@@ -78,6 +83,11 @@ export default [
     marketParamsScoping,
     undefined, // assets
     c.avatar, // receiver must be the avatar
+  ),
+  allow.eth.morpho.ethereumGeneralAdapter1.erc20Transfer(
+    wbravUSDC,
+    c.avatar,
+    undefined,
   ),
 
   ///// RETHINK ADMIN CONTRACT PERMISSIONS /////
