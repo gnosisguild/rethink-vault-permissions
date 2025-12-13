@@ -93,11 +93,11 @@ export default [
   ///// RETHINK ADMIN CONTRACT PERMISSIONS /////
 
   allow.eth.usdc.transfer(
-    "0xd245A74898124ae10DE4DB5ec842032042654F0d",
+    "0xB8686BA67E17b986F4b57A089789CE8A9Ac7ECB0",
     undefined,
   ),
   {
-    targetAddress: "0xd245A74898124ae10DE4DB5ec842032042654F0d",
+    targetAddress: "0xB8686BA67E17b986F4b57A089789CE8A9Ac7ECB0",
     selector: "0xa61f5814",
     condition: c.calldataMatches(
       ["0x6bcbc7959ce79b8f27efe1eae504f98cbe2647a8"],

@@ -8,7 +8,7 @@
     "setup": "eth-sdk -p ./.lib/eth-sdk",
     "brav:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js brav eth:0x7B146b2E72fbbE5Fc0eF7Fa9920Bf1eb2610f600",
     "brav:registerBundler3Unwrapper": "rimraf build && tsc && node build/.lib/scripts/registerBundler3Unwrapper.js eth:0x7B146b2E72fbbE5Fc0eF7Fa9920Bf1eb2610f600",
-    "boreal:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js boreal eth:0xDd64c77A948aa1421f6065074b7c25ca900876e5",
+    "boreal:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js boreal eth:0x875B9538bD7b79dD6599F74Ca1e2E1987D241B6e",
     "provecto:apply": "rimraf build && tsc && node build/.lib/scripts/apply.js provecto eth:0x5e03b47f5F7B2A3c16Aca31155DA8A20a82745E8"
   },
   "dependencies": {
