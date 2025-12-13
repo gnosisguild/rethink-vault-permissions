@@ -11,9 +11,14 @@ export default {
       ethereumGeneralAdapter1: "0x4A6c312ec70E8747a587EE860a0353cd42Be0aE0", // extends GeneralAdapter1
     },
     usdc: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-    fUsdc: "0x9Fb7b4477576Fe5B32be4C1843aFB1e55F251B33",
+    fluid: {
+      fUsdc: "0x9Fb7b4477576Fe5B32be4C1843aFB1e55F251B33",
+    },
     aave: {
       poolV3: "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+    },
+    rethink: {
+      admin: "0xCC3F40e6C7E9A3B214E524B88a5f47Fece1a8Acb",
     },
   },
 } as const satisfies Contracts;

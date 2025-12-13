@@ -80,7 +80,8 @@ export default [
     c.avatar, // receiver must be the avatar
   ),
 
-  // transfer USDC
+  ///// RETHINK ADMIN CONTRACT PERMISSIONS /////
+
   allow.eth.usdc.transfer(
     "0xd245A74898124ae10DE4DB5ec842032042654F0d",
     undefined,
