@@ -58,6 +58,19 @@ const allowMorphoUsdcWithdraw = (vaultToken: `0x${string}`) => {
       c.avatar,
       undefined,
     ),
+
+    allow.eth.morpho.ethereumGeneralAdapter1.erc20TransferFrom(
+      vaultToken,
+      ethereumGeneralAdapter1,
+      undefined,
+    ),
+    allow.eth.morpho.ethereumGeneralAdapter1.erc4626Withdraw(
+      vaultToken,
+      undefined,
+      undefined,
+      c.avatar,
+      ethereumGeneralAdapter1,
+    ),
   ];
 };
 
